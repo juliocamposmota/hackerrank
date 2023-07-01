@@ -1,16 +1,7 @@
 function findMedian(arr) {
-    // Write your code here
     const sortedArray = arr.sort((a ,b) => a -b)
     const arrayLength = arr.length
     const arrayMiddle = arrayLength % 2 === 0 ? (arrayLength/2) : Math.floor(arrayLength/2)
-
-    console.log('sorted array', sortedArray)
-    console.log('array length', arrayLength)
-    console.log('array module', arrayLength % 2 === 0)
-    console.log('array divided by 2', (arrayLength/2))
-    console.log('array divided by 2 floor', Math.floor(arrayLength/2))
-    console.log('array middle', arrayMiddle)
-    console.log(sortedArray[arrayMiddle])
     
     return sortedArray[arrayMiddle]
 }
